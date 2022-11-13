@@ -47,4 +47,4 @@ txip=`hostname -i`
 echo ""
 echo "Your can connect on your database on https://phpmyadmin.ignitionhost.ro"
 echo "Use your server ip as the server, user and password you set earlier"
-read -p "Server installed, use $txip:40120 to configure your fivem server"
+read -p "Server installed, use $txip:40120 to configure your fivem server from TxAdmin"
