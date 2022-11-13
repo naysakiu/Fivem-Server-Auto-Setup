@@ -1,0 +1,9 @@
+[Unit]
+Description=IgnitionHost Fivem Server
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/fivem_ignition.sh
+
+[Install]
+WantedBy=multi-user.target
