@@ -7,5 +7,6 @@ fi
 echo "      Thanks For Buying From Ignition."
 echo "With this script you can setup your fivem server"
 read -p "Press any key to start installing ..."
+apt -y install sudo
 sudo apt update
 sudo apt -y upgrade
