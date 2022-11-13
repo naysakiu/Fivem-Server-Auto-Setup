@@ -26,4 +26,3 @@ CREATE USER '${db}'@'%' IDENTIFIED BY '${password}';
 GRANT ALL PRIVILEGES ON *.* TO '${db}'@'%';
 FLUSH PRIVILEGES;
 MYSQL_SCRIPT
-screen -S fivem bash -c "./run.sh"
