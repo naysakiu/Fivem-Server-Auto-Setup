@@ -37,9 +37,10 @@ GRANT ALL PRIVILEGES ON *.* TO '${db}'@'%';
 FLUSH PRIVILEGES;
 MYSQL_SCRIPT
 cd /etc/systemd/system
-wget https://raw.githubusercontent.com/naysaku/Fivem-Server-Auto-Setup/main/cdn/fivem.service
+wget https://raw.githubusercontent.com/naysaku/Fivem-Server-Auto-Setup/main/cdn/fivem-server.service
 cd /usr/bin/
 wget https://raw.githubusercontent.com/naysaku/Fivem-Server-Auto-Setup/main/cdn/fivem_ignition.sh
+chmod +x fivem_ignition.sh
 cd
 systemctl enable fivem-server
 txip=`hostname -i`
