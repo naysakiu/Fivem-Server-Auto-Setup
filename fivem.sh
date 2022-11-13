@@ -17,12 +17,3 @@ tar -xvf fx.tar.xz
 curl -sS https://downloads.mariadb.com/MariaDB/mariadb_repo_setup | sudo bash
 apt update
 apt -y install mariadb-server nginx tar unzip git
-read -p "Database username?: " db
-read -p "Database user password?: " password
-mysql -u root<<MYSQL_SCRIPT
-CREATE DATABASE ${db};
-CREATE USER '${db}'@'%' IDENTIFIED BY '${password}';
-GRANT ALL PRIVILEGES ON *.* TO '${db}'@'%';
-FLUSH PRIVILEGES;
-MYSQL_SCRIPT
-screen -S fivem bash -c "./run.sh"
