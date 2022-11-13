@@ -10,3 +10,7 @@ read -p "Press any key to start installing ..."
 apt -y install sudo
 sudo apt update
 sudo apt -y upgrade
+mkdir fivem-server
+cd fivem-server
+wget https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/6019-f14f98f0089b9068916e0fec0180b2ee968d8387/fx.tar.xz
+tar -xzvf fx.tar.gz
