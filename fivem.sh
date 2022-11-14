@@ -66,4 +66,3 @@ echo "The server starts up automatically on every startup and after this setup."
 echo "Use screen -r to enter the console, to exit the console hit Ctrl+A and then D"
 echo "-----------------------------------------------------------------------------"
 read -p "Server installed, use $txip:40120 to configure your FiveM server from TxAdmin"
-rm fivem.sh
