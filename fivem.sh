@@ -17,7 +17,7 @@ sudo apt -y upgrade
 
 curl -sS https://downloads.mariadb.com/MariaDB/mariadb_repo_setup | sudo bash
 apt update
-apt -y install mariadb-server tar unzip git
+apt -y install mariadb-server tar unzip git screen
 
 cd /etc/mysql
 rm my.cnf
