@@ -1,16 +1,20 @@
 #!/bin/bash
 set -e
+
 if [[ $EUID -ne 0 ]]; then
   echo "* This script must be executed with root privileges (sudo)." 1>&2
   exit 1
 fi
+
 echo "      Thanks For Buying From Ignition."
 echo "With this script you can setup your FiveM server"
 echo "      Made By SuperHori♡#6969"
 read -p "Press any key to start installing ..."
+
 apt -y install sudo
 sudo apt update
 sudo apt -y upgrade
+
 curl -sS https://downloads.mariadb.com/MariaDB/mariadb_repo_setup | sudo bash
 apt update
 apt -y install mariadb-server tar unzip git
