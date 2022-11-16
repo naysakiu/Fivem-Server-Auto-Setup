@@ -51,6 +51,7 @@ wget https://raw.githubusercontent.com/naysaku/Fivem-Server-Auto-Setup/main/cdn/
 chmod +x fivem_ignition.sh
 cd
 systemctl enable fivem-server
+systemctl restart fivem-server
 
 txip=`hostname -i`
 echo ""
