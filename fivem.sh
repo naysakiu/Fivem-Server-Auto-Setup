@@ -8,7 +8,7 @@ fi
 
 echo "      Thanks For Buying From Ignition."
 echo "With this script you can setup your FiveM server"
-echo "      Made By SuperHori♡#6969"
+echo "      Made By IGH"
 read -p "Press any key to start installing ..."
 
 apt -y install sudo
