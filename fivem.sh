@@ -35,7 +35,7 @@ mkdir resources
 read -p "Artifacts Link?(From https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/): " artifacts
 wget ${artifacts}
 tar -xvf fx.tar.xz
-https://raw.githubusercontent.com/spritsail/fivem/master/server.cfg
+wget https://raw.githubusercontent.com/spritsail/fivem/master/server.cfg
 
 read -p "Database username?: " db
 read -p "Database user password?: " password
