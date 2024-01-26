@@ -29,6 +29,8 @@ systemctl restart mysql
 systemctl restart mariadb
 cd
 
+wget https://raw.githubusercontent.com/naysakiu/Fivem-Server-Auto-Setup/main/cdn/database.sh
+chmod +x database.sh
 mkdir fivem-server
 cd fivem-server
 mkdir resources
