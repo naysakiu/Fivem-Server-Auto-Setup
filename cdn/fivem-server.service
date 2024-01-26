@@ -1,9 +1,9 @@
 [Unit]
-Description=IgnitionHost Fivem Server
+Description=NOPING Fivem Server
 
 [Service]
 Type=forking
-ExecStart=/usr/bin/fivem_ignition.sh
+ExecStart=/usr/bin/fivem_noping.sh
 
 [Install]
 WantedBy=multi-user.target
