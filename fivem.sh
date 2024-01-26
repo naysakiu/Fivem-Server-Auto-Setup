@@ -21,10 +21,10 @@ apt -y install mariadb-server tar unzip git screen
 
 cd /etc/mysql
 rm my.cnf
-wget https://raw.githubusercontent.com/naysaku/Fivem-Server-Auto-Setup/main/cdn/my.cnf
+wget2 https://raw.githubusercontent.com/naysaku/Fivem-Server-Auto-Setup/main/cdn/my.cnf
 cd /etc/mysql/mariadb.conf.d
 rm 50-server.cnf
-wget https://raw.githubusercontent.com/naysaku/Fivem-Server-Auto-Setup/main/cdn/50-server.cnf
+wget2 https://raw.githubusercontent.com/naysaku/Fivem-Server-Auto-Setup/main/cdn/50-server.cnf
 systemctl restart mysql
 systemctl restart mariadb
 cd
@@ -32,7 +32,7 @@ cd
 mkdir fivem-server
 cd fivem-server
 read -p "Artifacts Link?(From https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/): " artifacts
-wget ${artifacts}
+wget2 ${artifacts}
 tar -xvf fx.tar.xz
 
 read -p "Database username?: " db
@@ -45,9 +45,9 @@ FLUSH PRIVILEGES;
 MYSQL_SCRIPT
 
 cd /etc/systemd/system
-wget https://raw.githubusercontent.com/naysaku/Fivem-Server-Auto-Setup/main/cdn/fivem-server.service
+wget2 https://raw.githubusercontent.com/naysaku/Fivem-Server-Auto-Setup/main/cdn/fivem-server.service
 cd /usr/bin/
-wget https://raw.githubusercontent.com/naysaku/Fivem-Server-Auto-Setup/main/cdn/fivem_ignition.sh
+wget2 https://raw.githubusercontent.com/naysaku/Fivem-Server-Auto-Setup/main/cdn/fivem_ignition.sh
 chmod +x fivem_ignition.sh
 cd
 systemctl enable fivem-server
