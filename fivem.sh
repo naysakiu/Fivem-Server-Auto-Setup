@@ -31,6 +31,7 @@ cd
 
 mkdir fivem-server
 cd fivem-server
+mkdir resources
 read -p "Artifacts Link?(From https://runtime.fivem.net/artifacts/fivem/build_proot_linux/master/): " artifacts
 wget ${artifacts}
 tar -xvf fx.tar.xz
