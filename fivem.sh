@@ -31,6 +31,8 @@ cd
 
 wget https://raw.githubusercontent.com/naysakiu/Fivem-Server-Auto-Setup/main/cdn/database.sh
 chmod +x database.sh
+wget https://raw.githubusercontent.com/naysakiu/Fivem-Server-Auto-Setup/main/cdn/update.sh
+chmod +x update.sh
 mkdir fivem-server
 cd fivem-server
 mkdir resources
