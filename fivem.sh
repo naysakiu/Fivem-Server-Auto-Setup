@@ -47,8 +47,8 @@ MYSQL_SCRIPT
 cd /etc/systemd/system
 wget https://raw.githubusercontent.com/naysaku/Fivem-Server-Auto-Setup/main/cdn/fivem-server.service
 cd /usr/bin/
-wget https://raw.githubusercontent.com/naysaku/Fivem-Server-Auto-Setup/main/cdn/fivem_ignition.sh
-chmod +x fivem_ignition.sh
+wget https://raw.githubusercontent.com/naysaku/Fivem-Server-Auto-Setup/main/cdn/fivem_noping.sh
+chmod +x fivem_noping.sh
 cd
 systemctl enable fivem-server
 systemctl restart fivem-server
@@ -57,10 +57,10 @@ txip=`hostname -i`
 echo ""
 echo "Server installed!!!"
 echo ""
-echo "Your can connect on your database on https://phpmyadmin.ignitionhost.ro"
+echo "Your can connect on your database on https://phpmyadmin.noping.ro"
 echo "Connect to the db using the server ip, database username and password"
 echo "-----------------------------------------------------------------------------"
-echo "DO NOT EVER RUN THE SERVER USING fivem_ignition.sh. [It is controlled automatically by systemd(systemctl)]"
+echo "DO NOT EVER RUN THE SERVER USING fivem_noping.sh. [It is controlled automatically by systemd(systemctl)]"
 echo "You can control the server using the TxAdmin UI"
 echo "You can also control the server using systemctl (start/restart/stop) fivem-server but it is not recommended."
 echo "The server starts up automatically on every startup and after this setup."
